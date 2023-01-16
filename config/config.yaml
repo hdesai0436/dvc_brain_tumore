@@ -1,0 +1,12 @@
+artifacts:
+  artifacts_dir: artifacts
+  data_dirs:
+    - data/yes
+    - data/no
+
+
+
+source_data_dir:
+  - ../brain_tumor_dataset/yes
+  - ../brain_tumor_dataset/no
+

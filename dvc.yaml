@@ -1,0 +1,12 @@
+stages:
+  load_data:
+    cmd: python src/stage_01_load.py --config=config/config.yaml
+    deps:
+      - src/stage_01_load.py
+      - config/config.yaml
+      - src/utils/all_utils.py
+
+    outs:
+      - data
+
+    
