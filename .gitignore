@@ -161,3 +161,8 @@ cython_debug/
 
 tumore/
 data/
+test/
+train_data/
+val_data/
+
+

@@ -19,8 +19,8 @@ def get_data(config_path):
     config = read_yaml(config_path)
 
     source_download_dirs = config['source_data_dir']
-    artifacts_dir =  config['artifacts']['artifacts_dir']
-    local_dir = config['artifacts']['data_dirs']
+    
+    local_dir = config['data_dirs']
     
     
     for souce_download, local_data_dir in tqdm(zip(source_download_dirs,local_dir),total=2, desc="list pf folders"):

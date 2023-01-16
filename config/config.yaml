@@ -1,12 +1,26 @@
 artifacts:
   artifacts_dir: artifacts
-  data_dirs:
-    - data/yes
-    - data/no
+
 
 
 
 source_data_dir:
   - ../brain_tumor_dataset/yes
   - ../brain_tumor_dataset/no
+
+
+data_dirs:
+  - data/yes
+  - data/no
+
+test_dir: 
+  - test/yes
+  - test/no
+train_dirs:
+  - train_data/yes
+  - train_data/no
+val_dirs:
+  - val_data/yes
+  - val_data/no
+
 

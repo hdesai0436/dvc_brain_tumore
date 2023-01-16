@@ -9,4 +9,15 @@ stages:
     outs:
       - data
 
-    
+  split_data:
+    cmd: python src/stage_02.py --config=config/config.yaml
+
+    deps:
+      - src/stage_02.py
+      - config/config.yaml
+      - src/utils/all_utils.py
+      - data
+    outs:
+      - test
+      - train_data
+      - val_data
