@@ -166,3 +166,13 @@ train_data/
 val_data/
 
 
+/data
+/test
+/train_data
+/val_data
+/test_crop
+/val_crop
+
+test_crop/
+train_crop/
+val_crop/

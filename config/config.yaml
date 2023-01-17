@@ -1,5 +1,13 @@
 artifacts:
   artifacts_dir: artifacts
+  test_data_dir: test/
+  train_data_dir: train_data/
+  val_data_dir: val_data/
+
+  test_crop_dir: test_crop/
+  train_crop_dir : train_crop/
+  val_crop_dir: val_crop
+
 
 
 
@@ -22,5 +30,18 @@ train_dirs:
 val_dirs:
   - val_data/yes
   - val_data/no
+
+test_dir_crop:
+  - test_crop/yes
+  - test_crop/no
+
+train_dir_crop:
+  - train_crop/yes
+  - train_crop/no
+
+val_dir_crop:
+  - val_crop/yes
+  - val_crop/no
+
 
 

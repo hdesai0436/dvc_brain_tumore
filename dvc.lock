@@ -4,16 +4,78 @@ stages:
     cmd: python src/stage_01_load.py --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: 9978c16449659da95e5c13cccd8d924d
-      size: 218
+      md5: 5836d478be4af0c13a86ae7f4740c802
+      size: 655
     - path: src/stage_01_load.py
       md5: 11c37c4ff301ac69a77a79f0b6fa9e51
       size: 1156
     - path: src/utils/all_utils.py
-      md5: 4be1765a041c8e0ef2703e1a2e6b9d18
-      size: 293
+      md5: 51cb84fe871423a16acac93773d0a6d8
+      size: 3883
     outs:
     - path: data
       md5: fe1560e2fb3c71e1e61be2f70e9df623.dir
       size: 68168597
       nfiles: 2998
+  split_data:
+    cmd: python src/stage_02.py --config=config/config.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 5836d478be4af0c13a86ae7f4740c802
+      size: 655
+    - path: data
+      md5: fe1560e2fb3c71e1e61be2f70e9df623.dir
+      size: 68168597
+      nfiles: 2998
+    - path: src/stage_02.py
+      md5: 6785ca057e1194689f687efba0086c43
+      size: 1357
+    - path: src/utils/all_utils.py
+      md5: 51cb84fe871423a16acac93773d0a6d8
+      size: 3883
+    outs:
+    - path: test
+      md5: fafdc6c74f6fe11d3f84338f58731d6a.dir
+      size: 279830
+      nfiles: 10
+    - path: train_data
+      md5: 398d15a89dcdbea33f87bced7d79145e.dir
+      size: 56849107
+      nfiles: 2387
+    - path: val_data
+      md5: 79accb90e1d6e47207fd97311a85fbca.dir
+      size: 11000964
+      nfiles: 598
+  preprocess:
+    cmd: python src/stage_03.py --config=config/config.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 5836d478be4af0c13a86ae7f4740c802
+      size: 655
+    - path: src/stage_03.py
+      md5: 758e3c4872bd9ee259e36d7d37a1fb77
+      size: 1938
+    - path: src/utils/all_utils.py
+      md5: 51cb84fe871423a16acac93773d0a6d8
+      size: 3883
+    - path: test
+      md5: fafdc6c74f6fe11d3f84338f58731d6a.dir
+      size: 279830
+      nfiles: 10
+    - path: train_data
+      md5: 398d15a89dcdbea33f87bced7d79145e.dir
+      size: 56849107
+      nfiles: 2387
+    - path: val_data
+      md5: 79accb90e1d6e47207fd97311a85fbca.dir
+      size: 11000964
+      nfiles: 598
+    outs:
+    - path: test_crop
+      md5: 27a5f1307c13d8fb989bb435df376e76.dir
+      size: 249179
+      nfiles: 10
+    - path: val_crop
+      md5: d751713988987e9331980363e24189ce.dir
+      size: 0
+      nfiles: 0

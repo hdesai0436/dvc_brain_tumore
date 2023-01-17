@@ -22,7 +22,7 @@ def split_data(config_path):
 
     for souce_download, val_data in tqdm(zip(local_dir_path,val_data_path),total=2, desc="list pf folders"):
         create_directory([val_data])
-        copy_train_file(souce_download,val_data)
+        copy_val_file(souce_download,val_data)
 
     
 
