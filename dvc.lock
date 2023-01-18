@@ -7,11 +7,11 @@ stages:
       md5: 5836d478be4af0c13a86ae7f4740c802
       size: 655
     - path: src/stage_01_load.py
-      md5: 11c37c4ff301ac69a77a79f0b6fa9e51
-      size: 1156
+      md5: 36d08ede05b504306c7db283048bad33
+      size: 1187
     - path: src/utils/all_utils.py
-      md5: 51cb84fe871423a16acac93773d0a6d8
-      size: 3883
+      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
+      size: 6765
     outs:
     - path: data
       md5: fe1560e2fb3c71e1e61be2f70e9df623.dir
@@ -28,11 +28,11 @@ stages:
       size: 68168597
       nfiles: 2998
     - path: src/stage_02.py
-      md5: 6785ca057e1194689f687efba0086c43
-      size: 1357
+      md5: cba30ca8befc6d17362b6af9ec6ab7b6
+      size: 1692
     - path: src/utils/all_utils.py
-      md5: 51cb84fe871423a16acac93773d0a6d8
-      size: 3883
+      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
+      size: 6765
     outs:
     - path: test
       md5: fafdc6c74f6fe11d3f84338f58731d6a.dir
@@ -53,11 +53,11 @@ stages:
       md5: 5836d478be4af0c13a86ae7f4740c802
       size: 655
     - path: src/stage_03.py
-      md5: 758e3c4872bd9ee259e36d7d37a1fb77
-      size: 1938
+      md5: 1fe2a62be0d70d48cd9a5902bb211f4d
+      size: 2238
     - path: src/utils/all_utils.py
-      md5: 51cb84fe871423a16acac93773d0a6d8
-      size: 3883
+      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
+      size: 6765
     - path: test
       md5: fafdc6c74f6fe11d3f84338f58731d6a.dir
       size: 279830

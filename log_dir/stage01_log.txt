@@ -1,0 +1,28 @@
+2023-01-17/19:07:30		>>>>>>>> stage 01 stated
+2023-01-17/19:07:30		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:07:30		directory is created at data/yes
+2023-01-17/19:07:45		successfully get files from ../brain_tumor_dataset/yes to data/yes local system
+2023-01-17/19:07:45		directory is created at data/no
+2023-01-17/19:08:04		successfully get files from ../brain_tumor_dataset/no to data/no local system
+2023-01-17/19:08:04		>>>>>>>> stage 01 ended
+2023-01-17/19:19:06		>>>>>>>> stage 01 stated
+2023-01-17/19:19:06		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:19:06		directory is created at data/yes
+2023-01-17/19:19:23		successfully get files from ../brain_tumor_dataset/yes to data/yes local system
+2023-01-17/19:19:23		directory is created at data/no
+2023-01-17/19:19:44		successfully get files from ../brain_tumor_dataset/no to data/no local system
+2023-01-17/19:19:44		>>>>>>>> stage 01 ended
+2023-01-17/19:31:39		>>>>>>>> stage 01 stated
+2023-01-17/19:31:39		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:31:39		directory is created at data/yes
+2023-01-17/19:31:52		successfully get files from ../brain_tumor_dataset/yes to data/yes local system
+2023-01-17/19:31:52		directory is created at data/no
+2023-01-17/19:32:05		successfully get files from ../brain_tumor_dataset/no to data/no local system
+2023-01-17/19:32:05		>>>>>>>> stage 01 ended
+2023-01-17/19:45:19		>>>>>>>> stage 01 stated
+2023-01-17/19:45:19		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:45:19		directory is created at data/yes
+2023-01-17/19:45:34		successfully get files from ../brain_tumor_dataset/yes to data/yes local system
+2023-01-17/19:45:35		directory is created at data/no
+2023-01-17/19:45:49		successfully get files from ../brain_tumor_dataset/no to data/no local system
+2023-01-17/19:45:49		>>>>>>>> stage 01 ended

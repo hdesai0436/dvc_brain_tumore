@@ -1,0 +1,35 @@
+2023-01-17/19:14:54		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:24:44		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:25:36		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:31:10		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:31:10		successfully load data from resized and save as np.array
+2023-01-17/19:36:44		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:36:45		successfully load data from resized and save as np.array
+2023-01-17/19:37:05		successfully load data from resized and save as np.array
+2023-01-17/19:38:25		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:38:25		successfully load data from resized and save as np.array
+2023-01-17/19:38:40		successfully load data from resized and save as np.array
+2023-01-17/19:40:03		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:40:03		successfully load data from resized and save as np.array
+2023-01-17/19:40:20		successfully load data from resized and save as np.array
+2023-01-17/19:40:24		successfully load data from resized and save as np.array
+2023-01-17/19:42:49		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:42:49		successfully load data from resized and save as np.array
+2023-01-17/19:43:07		successfully load data from resized and save as np.array
+2023-01-17/19:43:11		successfully load data from resized and save as np.array
+2023-01-17/19:50:46		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:50:46		successfully load data from resized and save as np.array
+2023-01-17/19:51:09		successfully load data from resized and save as np.array
+2023-01-17/19:51:14		successfully load data from resized and save as np.array
+2023-01-17/19:51:20		successfully crop the image
+2023-01-17/19:51:21		successfully crop the image
+2023-01-17/19:51:22		successfully crop the image
+2023-01-17/19:51:22		directory is created at test_crop/yes
+2023-01-17/19:51:22		directory is created at test_crop/no
+2023-01-17/19:51:22		directory is created at train_crop/yes
+2023-01-17/19:51:22		directory is created at train_crop/no
+2023-01-17/19:51:22		directory is created at val_crop/yes
+2023-01-17/19:51:22		directory is created at val_crop/no
+2023-01-17/19:51:22		 successfully save the crop the image in test_crop/
+2023-01-17/19:51:44		 successfully save the crop the image in train_crop/
+2023-01-17/19:51:45		 successfully save the crop the image in val_crop

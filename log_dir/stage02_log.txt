@@ -1,0 +1,61 @@
+2023-01-17/19:10:51		>>>>>>>> stage 02 stated
+2023-01-17/19:11:53		>>>>>>>> stage 02 stated
+2023-01-17/19:11:53		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:11:53		directory is created at test/yes
+2023-01-17/19:11:53		successfully copy test files from data/yes to test/yes for testing model
+2023-01-17/19:11:53		directory is created at test/no
+2023-01-17/19:11:53		successfully copy test files from data/no to test/no for testing model
+2023-01-17/19:11:53		directory is created at train_data/yes
+2023-01-17/19:11:57		successfully copy train files from data/yes to train_data/yes fot training model
+2023-01-17/19:11:57		directory is created at train_data/no
+2023-01-17/19:12:06		successfully copy train files from data/no to train_data/no fot training model
+2023-01-17/19:12:06		directory is created at val_data/yes
+2023-01-17/19:12:08		successfully copy validations files from data/yes to val_data/yes
+2023-01-17/19:12:08		directory is created at val_data/no
+2023-01-17/19:12:10		successfully copy validations files from data/no to val_data/no
+2023-01-17/19:12:10		>>>>>>>> stage 02 end
+2023-01-17/19:22:22		>>>>>>>> stage 02 stated
+2023-01-17/19:22:22		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:22:22		directory is created at test/yes
+2023-01-17/19:22:22		successfully copy test files from data/yes to test/yes for testing model
+2023-01-17/19:22:22		directory is created at test/no
+2023-01-17/19:22:22		successfully copy test files from data/no to test/no for testing model
+2023-01-17/19:22:22		directory is created at train_data/yes
+2023-01-17/19:22:32		successfully copy train files from data/yes to train_data/yes fot training model
+2023-01-17/19:22:32		directory is created at train_data/no
+2023-01-17/19:22:42		successfully copy train files from data/no to train_data/no fot training model
+2023-01-17/19:22:42		directory is created at val_data/yes
+2023-01-17/19:22:44		successfully copy validations files from data/yes to val_data/yes
+2023-01-17/19:22:44		directory is created at val_data/no
+2023-01-17/19:22:47		successfully copy validations files from data/no to val_data/no
+2023-01-17/19:22:47		>>>>>>>> stage 02 end
+2023-01-17/19:34:14		>>>>>>>> stage 02 stated
+2023-01-17/19:34:14		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:34:14		directory is created at test/yes
+2023-01-17/19:34:14		successfully copy test files from data/yes to test/yes for testing model
+2023-01-17/19:34:14		directory is created at test/no
+2023-01-17/19:34:14		successfully copy test files from data/no to test/no for testing model
+2023-01-17/19:34:14		directory is created at train_data/yes
+2023-01-17/19:34:21		successfully copy train files from data/yes to train_data/yes fot training model
+2023-01-17/19:34:21		directory is created at train_data/no
+2023-01-17/19:34:29		successfully copy train files from data/no to train_data/no fot training model
+2023-01-17/19:34:29		directory is created at val_data/yes
+2023-01-17/19:34:30		successfully copy validations files from data/yes to val_data/yes
+2023-01-17/19:34:30		directory is created at val_data/no
+2023-01-17/19:34:32		successfully copy validations files from data/no to val_data/no
+2023-01-17/19:34:32		>>>>>>>> stage 02 end
+2023-01-17/19:48:03		>>>>>>>> stage 02 stated
+2023-01-17/19:48:03		yaml file: config/config.yaml loaded successfully
+2023-01-17/19:48:03		directory is created at test/yes
+2023-01-17/19:48:03		successfully copy test files from data/yes to test/yes for testing model
+2023-01-17/19:48:03		directory is created at test/no
+2023-01-17/19:48:03		successfully copy test files from data/no to test/no for testing model
+2023-01-17/19:48:03		directory is created at train_data/yes
+2023-01-17/19:48:14		successfully copy train files from data/yes to train_data/yes fot training model
+2023-01-17/19:48:14		directory is created at train_data/no
+2023-01-17/19:48:21		successfully copy train files from data/no to train_data/no fot training model
+2023-01-17/19:48:21		directory is created at val_data/yes
+2023-01-17/19:48:23		successfully copy validations files from data/yes to val_data/yes
+2023-01-17/19:48:23		directory is created at val_data/no
+2023-01-17/19:48:25		successfully copy validations files from data/no to val_data/no
+2023-01-17/19:48:25		>>>>>>>> stage 02 end

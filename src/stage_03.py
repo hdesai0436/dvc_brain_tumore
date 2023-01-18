@@ -8,10 +8,14 @@ import cv2
 import numpy as np
 import imutils
 
+from application_logging.logger import App_Logger
+log_write = App_Logger()
+log_file = open("log_dir/stage03_log.txt", 'a+')
+
 
 def preprocess(config_path):
     IMG_SIZE = (224,224)
-    config = read_yaml(config_path)
+    config = read_yaml(config_path,log_file)
     artifacts = config["artifacts"]
     test_data_path = config['artifacts']['test_data_dir']
     train_data_path = config['artifacts']['train_data_dir']
@@ -28,28 +32,29 @@ def preprocess(config_path):
     
     
         
-    x_test,y_test,_ = load_data(test_data_path,IMG_SIZE)
-    x_train,y_train,labels= load_data(train_data_path)
-    x_val,y_val,_= load_data(val_data_path)
+    x_test,y_test,_ = load_data(test_data_path,log_file,IMG_SIZE)
+    
+    x_train,y_train,labels= load_data(train_data_path,log_file,IMG_SIZE)
+    x_val,y_val,_= load_data(val_data_path,log_file,IMG_SIZE)
 
-    x_train_crop = crop_imgs(set_name=x_train)
-    x_val_crop = crop_imgs(set_name=x_val)
-    x_test_crop = crop_imgs(set_name=x_test)
+    x_train_crop = crop_imgs(set_name= x_train,log_file=log_file)
+    x_val_crop = crop_imgs(set_name=x_val, log_file=log_file)
+    x_test_crop = crop_imgs(set_name=x_test, log_file=log_file)
 
     
     for i in test_crop_path:
-        create_directory([i])
+        create_directory([i],log_file)
     for i in train_crop_path:
-        create_directory([i])
+        create_directory([i],log_file)
     for i in val_crop_path:
-        create_directory([i])
+        create_directory([i],log_file)
 
     
         
     
-    save_new_images(x_test_crop,y_test,test_crop_dir_path)
-    save_new_images(x_train_crop,y_train,train_crop_dir_path)
-    save_new_images(x_val_crop,y_val,val_crop_dir_path)
+    save_new_images(x_test_crop,y_test,test_crop_dir_path,log_file)
+    save_new_images(x_train_crop,y_train,train_crop_dir_path,log_file)
+    save_new_images(x_val_crop,y_val,val_crop_dir_path,log_file)
 
        
 
