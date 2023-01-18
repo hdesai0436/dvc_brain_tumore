@@ -176,3 +176,5 @@ val_data/
 test_crop/
 train_crop/
 val_crop/
+
+artifacts/base_model/

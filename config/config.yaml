@@ -8,6 +8,13 @@ artifacts:
   train_crop_dir : train_crop/
   val_crop_dir: val_crop
 
+  train_model_dir: model
+  base_model_dir: base_model
+  base_model_name: vgg16_base_model.h5
+  update_base_model_name: update_vgg16.h5
+  checkpoint_dir: checkpoints
+  callback_dir: callbacks
+
 
 
 

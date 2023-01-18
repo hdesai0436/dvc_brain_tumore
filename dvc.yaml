@@ -38,6 +38,20 @@ stages:
       - test_crop
       - val_crop
 
+  prepare_model:
+    cmd: python src/stage_04.py --config=config/config.yaml --params= params.yaml
+
+    deps:
+      - src/stage_04.py
+      - src/utils/all_utils.py
+      - src/utils/models.py
+      - config/config.yaml
+
+    outs:
+      - artifacts/base_model/vgg16_base_model.h5
+      - artifacts/base_model/update_vgg16.h5
+
+
     
 
 
