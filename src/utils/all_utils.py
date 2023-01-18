@@ -7,7 +7,7 @@ from tqdm import tqdm
 import cv2
 import imutils
 from application_logging.logger import App_Logger
-
+import time
 log_write = App_Logger()
 
 
@@ -172,6 +172,15 @@ def save_new_images(x_set, y_set,path,log_file):
     except Exception as e:
         log_write.log(log_file,f" error occur in save_new_image  function {e}")
         raise e
+
+def get_timestamp(name):
+    try:
+        timestamp = time.asctime().replace(" ", "_").replace(":", "_")
+        unique_name = f"{name}_at_{timestamp}"
+        return unique_name
+    except Exception as e:
+        raise e
+    
 
 
 

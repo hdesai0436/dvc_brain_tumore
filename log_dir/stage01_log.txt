@@ -26,3 +26,10 @@
 2023-01-17/19:45:35		directory is created at data/no
 2023-01-17/19:45:49		successfully get files from ../brain_tumor_dataset/no to data/no local system
 2023-01-17/19:45:49		>>>>>>>> stage 01 ended
+2023-01-17/21:47:18		>>>>>>>> stage 01 stated
+2023-01-17/21:47:18		yaml file: config/config.yaml loaded successfully
+2023-01-17/21:47:18		directory is created at data/yes
+2023-01-17/21:47:46		successfully get files from ../brain_tumor_dataset/yes to data/yes local system
+2023-01-17/21:47:46		directory is created at data/no
+2023-01-17/21:48:12		successfully get files from ../brain_tumor_dataset/no to data/no local system
+2023-01-17/21:48:12		>>>>>>>> stage 01 ended

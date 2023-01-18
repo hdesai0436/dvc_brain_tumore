@@ -40,3 +40,19 @@
 2023-01-17/21:18:27		VGG16 base model saved at: artifacts\base_model\vgg16_base_model.h5
 2023-01-17/21:18:27		custom model is compiled and ready to be trained
 2023-01-17/21:18:27		>>>>>>>> stage 04 end
+2023-01-17/22:00:50		yaml file: config/config.yaml loaded successfully
+2023-01-17/22:00:51		successfully load data from resized and save as np.array
+2023-01-17/22:01:15		successfully load data from resized and save as np.array
+2023-01-17/22:01:19		successfully load data from resized and save as np.array
+2023-01-17/22:01:24		successfully crop the image
+2023-01-17/22:01:26		successfully crop the image
+2023-01-17/22:01:26		successfully crop the image
+2023-01-17/22:01:26		directory is created at test_crop/yes
+2023-01-17/22:01:26		directory is created at test_crop/no
+2023-01-17/22:01:26		directory is created at train_crop/yes
+2023-01-17/22:01:26		directory is created at train_crop/no
+2023-01-17/22:01:26		directory is created at val_crop/yes
+2023-01-17/22:01:26		directory is created at val_crop/no
+2023-01-17/22:01:26		 successfully save the crop the image in test_crop/
+2023-01-17/22:01:47		 successfully save the crop the image in train_crop/
+2023-01-17/22:01:49		 successfully save the crop the image in val_crop

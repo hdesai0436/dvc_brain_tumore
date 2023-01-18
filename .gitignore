@@ -178,3 +178,7 @@ train_crop/
 val_crop/
 
 artifacts/base_model/
+artifacts/callbacks/
+artifacts/checkpoints/
+artifacts/tensorboard_log_dir/
+
