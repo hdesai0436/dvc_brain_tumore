@@ -56,3 +56,58 @@
 2023-01-17/22:01:26		 successfully save the crop the image in test_crop/
 2023-01-17/22:01:47		 successfully save the crop the image in train_crop/
 2023-01-17/22:01:49		 successfully save the crop the image in val_crop
+2023-01-18/11:00:15		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:00:16		successfully load data from resized and save as np.array
+2023-01-18/11:00:58		successfully load data from resized and save as np.array
+2023-01-18/11:01:09		successfully load data from resized and save as np.array
+2023-01-18/11:01:13		successfully crop the image
+2023-01-18/11:01:14		successfully crop the image
+2023-01-18/11:01:14		successfully crop the image
+2023-01-18/11:01:14		directory is created at test_crop/yes
+2023-01-18/11:01:14		directory is created at test_crop/no
+2023-01-18/11:01:14		directory is created at train_crop/yes
+2023-01-18/11:01:14		directory is created at train_crop/no
+2023-01-18/11:01:14		directory is created at val_crop/yes
+2023-01-18/11:01:14		directory is created at val_crop/no
+2023-01-18/11:01:14		 successfully save the crop the image in test_crop/
+2023-01-18/11:01:25		 successfully save the crop the image in train_crop/
+2023-01-18/11:01:30		 successfully save the crop the image in val_crop/
+2023-01-18/11:27:25		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:27:25		successfully load data from resized and save as np.array
+2023-01-18/11:27:43		successfully load data from resized and save as np.array
+2023-01-18/11:27:46		successfully load data from resized and save as np.array
+2023-01-18/11:27:50		successfully crop the image
+2023-01-18/11:27:51		successfully crop the image
+2023-01-18/11:27:52		successfully crop the image
+2023-01-18/11:28:06		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:28:06		successfully load data from resized and save as np.array
+2023-01-18/11:28:27		successfully load data from resized and save as np.array
+2023-01-18/11:28:31		successfully load data from resized and save as np.array
+2023-01-18/11:28:34		successfully crop the image
+2023-01-18/11:28:36		successfully crop the image
+2023-01-18/11:28:36		successfully crop the image
+2023-01-18/11:28:36		directory is created at test_crop/yes
+2023-01-18/11:28:36		directory is created at test_crop/no
+2023-01-18/11:28:36		directory is created at train_crop/yes
+2023-01-18/11:28:36		directory is created at train_crop/no
+2023-01-18/11:28:36		directory is created at val_crop/yes
+2023-01-18/11:28:36		directory is created at val_crop/no
+2023-01-18/11:28:36		 successfully save the crop the image in test_crop/
+2023-01-18/11:28:52		 successfully save the crop the image in train_crop/
+2023-01-18/11:28:57		 successfully save the crop the image in val_crop/
+2023-01-19/16:10:08		yaml file: config/config.yaml loaded successfully
+2023-01-19/16:10:09		successfully load data from resized and save as np.array
+2023-01-19/16:10:26		successfully load data from resized and save as np.array
+2023-01-19/16:10:30		successfully load data from resized and save as np.array
+2023-01-19/16:10:35		successfully crop the image
+2023-01-19/16:10:36		successfully crop the image
+2023-01-19/16:10:36		successfully crop the image
+2023-01-19/16:10:36		directory is created at test_crop/yes
+2023-01-19/16:10:36		directory is created at test_crop/no
+2023-01-19/16:10:36		directory is created at train_crop/yes
+2023-01-19/16:10:36		directory is created at train_crop/no
+2023-01-19/16:10:36		directory is created at val_crop/yes
+2023-01-19/16:10:36		directory is created at val_crop/no
+2023-01-19/16:10:36		 successfully save the crop the image in test_crop/
+2023-01-19/16:10:54		 successfully save the crop the image in train_crop/
+2023-01-19/16:11:00		 successfully save the crop the image in val_crop/

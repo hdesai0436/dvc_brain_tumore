@@ -6,7 +6,7 @@ artifacts:
 
   test_crop_dir: test_crop/
   train_crop_dir : train_crop/
-  val_crop_dir: val_crop
+  val_crop_dir: val_crop/
 
   train_model_dir: model
   base_model_dir: base_model

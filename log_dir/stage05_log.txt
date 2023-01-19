@@ -31,3 +31,23 @@
 2023-01-17/22:46:48		tensorboard callback is being saved at artifacts\callbacks\tensorboard_cb.cb
 2023-01-17/22:46:48		tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
 2023-01-17/22:46:48		>>>>>>>> stage 05 end
+2023-01-18/11:23:32		>>>>>>>> stage 05 stated
+2023-01-18/11:23:32		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:23:32		yaml file: params.yaml loaded successfully
+2023-01-18/11:23:32		directory is created at artifacts\tensorboard_log_dir
+2023-01-18/11:23:32		directory is created at artifacts\checkpoints
+2023-01-18/11:23:32		directory is created at artifacts\callbacks
+2023-01-18/11:23:32		tensorboard callback is being saved at artifacts\callbacks\tensorboard_cb.cb
+2023-01-18/11:23:32		tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+2023-01-18/11:23:32		early_stopping callback created
+2023-01-18/11:23:32		>>>>>>>> stage 05 end
+2023-01-19/16:09:47		>>>>>>>> stage 05 stated
+2023-01-19/16:09:47		yaml file: config/config.yaml loaded successfully
+2023-01-19/16:09:47		yaml file: params.yaml loaded successfully
+2023-01-19/16:09:47		directory is created at artifacts\tensorboard_log_dir
+2023-01-19/16:09:47		directory is created at artifacts\checkpoints
+2023-01-19/16:09:47		directory is created at artifacts\callbacks
+2023-01-19/16:09:47		tensorboard callback is being saved at artifacts\callbacks\tensorboard_cb.cb
+2023-01-19/16:09:47		tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+2023-01-19/16:09:47		early_stopping callback created
+2023-01-19/16:09:47		>>>>>>>> stage 05 end

@@ -4,14 +4,14 @@ stages:
     cmd: python src/stage_01_load.py --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: 0557154ea67f49a42670a2a01fd92d84
-      size: 854
+      md5: 110bcc13bf7d79b572eb422c19a909e0
+      size: 908
     - path: src/stage_01_load.py
       md5: 36d08ede05b504306c7db283048bad33
       size: 1187
     - path: src/utils/all_utils.py
-      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
-      size: 6765
+      md5: 5c3848020f251961b1fc6a451c9f1780
+      size: 7013
     outs:
     - path: data
       md5: fe1560e2fb3c71e1e61be2f70e9df623.dir
@@ -21,8 +21,8 @@ stages:
     cmd: python src/stage_02.py --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: 0557154ea67f49a42670a2a01fd92d84
-      size: 854
+      md5: 110bcc13bf7d79b572eb422c19a909e0
+      size: 908
     - path: data
       md5: fe1560e2fb3c71e1e61be2f70e9df623.dir
       size: 68168597
@@ -31,8 +31,8 @@ stages:
       md5: cba30ca8befc6d17362b6af9ec6ab7b6
       size: 1692
     - path: src/utils/all_utils.py
-      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
-      size: 6765
+      md5: 5c3848020f251961b1fc6a451c9f1780
+      size: 7013
     outs:
     - path: test
       md5: fafdc6c74f6fe11d3f84338f58731d6a.dir
@@ -50,14 +50,14 @@ stages:
     cmd: python src/stage_03.py --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: 0557154ea67f49a42670a2a01fd92d84
-      size: 854
+      md5: 110bcc13bf7d79b572eb422c19a909e0
+      size: 908
     - path: src/stage_03.py
-      md5: 1fe2a62be0d70d48cd9a5902bb211f4d
-      size: 2238
+      md5: 705689f9b716dcf5f783f3793722e683
+      size: 2263
     - path: src/utils/all_utils.py
-      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
-      size: 6765
+      md5: 5c3848020f251961b1fc6a451c9f1780
+      size: 7013
     - path: test
       md5: fafdc6c74f6fe11d3f84338f58731d6a.dir
       size: 279830
@@ -76,24 +76,24 @@ stages:
       size: 249179
       nfiles: 10
     - path: val_crop
-      md5: d751713988987e9331980363e24189ce.dir
-      size: 0
-      nfiles: 0
+      md5: aa27df6635ad66f1ebe7f25922fb7e27.dir
+      size: 12637186
+      nfiles: 598
   prepare_model:
     cmd: python src/stage_04.py --config=config/config.yaml --params=params.yaml
     deps:
     - path: config/config.yaml
-      md5: 0557154ea67f49a42670a2a01fd92d84
-      size: 854
+      md5: 110bcc13bf7d79b572eb422c19a909e0
+      size: 908
     - path: src/stage_04.py
-      md5: 4ad3a70e0061f5c8f3a5e7766b657380
-      size: 2010
+      md5: bafa6c6bb4827945a75241feef91c7c2
+      size: 2001
     - path: src/utils/all_utils.py
-      md5: 87e5750f9887a6e3be2eb5cfc32a2f68
-      size: 6765
+      md5: 5c3848020f251961b1fc6a451c9f1780
+      size: 7013
     - path: src/utils/model.py
-      md5: 7ddcf1d4ed83f85c73c42061c4429c67
-      size: 2139
+      md5: 955eea220d958b5a2dd26933450da30e
+      size: 2755
     params:
       params.yaml:
         IMAGE_SIZE:
@@ -103,8 +103,33 @@ stages:
         LEARNING_RATE: 0.001
     outs:
     - path: artifacts/base_model/update_vgg16.h5
-      md5: 9e12cd0dc7d0b26a546a8d50c538a124
+      md5: 3924f53defce45f584f4d31ebedc812b
       size: 59134104
     - path: artifacts/base_model/vgg16_base_model.h5
       md5: 28e7400d1ac912df2b52e7f50b37656d
       size: 58920408
+  prepare_callback:
+    cmd: python src/stage_05.py --config=config/config.yaml --params=params.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 110bcc13bf7d79b572eb422c19a909e0
+      size: 908
+    - path: src/stage_05.py
+      md5: f240e27d5fe92deceb85990c1d051e47
+      size: 1916
+    - path: src/utils/all_utils.py
+      md5: 5c3848020f251961b1fc6a451c9f1780
+      size: 7013
+    - path: src/utils/callback.py
+      md5: 9f3122f43365e0c8e92fcd95ac64eba5
+      size: 2671
+    outs:
+    - path: artifacts/callbacks/checkpoint_cb.cb
+      md5: e0931597378c8c01e5fa61b8fba2ce64
+      size: 730
+    - path: artifacts/callbacks/early_stopping.cb
+      md5: dcca02d1cfc5bbba94ed8df0f8a9393b
+      size: 347
+    - path: artifacts/callbacks/tensorboard_cb.cb
+      md5: 6bcc258ec5bd9a982b1737f2ce6af1ea
+      size: 572

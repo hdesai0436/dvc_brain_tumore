@@ -65,5 +65,23 @@ def prepare_model(base_model,classes,freeze_all,freeze_till,learning_rate,log_fi
         raise e
 
 
+def load_full_model(model_path,log_file):
+    try:
+        model = tf.keras.models.load_model(model_path)
+        log_write.log(log_file,f"untrained model is read from: {model_path}")
+        return model
+    except Exception as e:
+        log_write.log(log_file,f"Error occur in load_full_model")
+        raise e
+
+def get_unique_path_to_save_model(trained_model_dir, model_name="model"):
+    timestamp = get_timestamp(model_name)
+    unique_model_name = f"{timestamp}_.h5"
+    unique_model_path = os.path.join(trained_model_dir, unique_model_name)
+    return unique_model_path
+        
+        
+
+
 
     

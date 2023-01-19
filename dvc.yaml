@@ -55,6 +55,46 @@ stages:
       - artifacts/base_model/vgg16_base_model.h5
       - artifacts/base_model/update_vgg16.h5
 
+  prepare_callback:
+    cmd: python src/stage_05.py --config=config/config.yaml --params=params.yaml
+
+    deps:
+      - src/stage_05.py
+      - src/utils/all_utils.py
+      - src/utils/callback.py
+      - config/config.yaml
+
+    outs:
+      - artifacts/callbacks/checkpoint_cb.cb
+      - artifacts/callbacks/tensorboard_cb.cb
+      - artifacts/callbacks/early_stopping.cb
+
+
+  train_model:
+    cmd: python src/stage_06.py --config=config/config.yaml --params=params.yaml
+
+    deps:
+      - src/stage_06.py
+      - src/utils/all_utils.py
+      - src/utils/callback.py
+      - src/utils/model.py
+      - config/config.yaml
+      - test_crop
+      - train_crop
+      - val_crop
+      - artifacts/base_model/update_vgg16.h5
+      - artifacts/callbacks/checkpoint_cb.cb
+      - artifacts/callbacks/tensorboard_cb.cb
+      - artifacts/callbacks/early_stopping.cb
+
+
+    outs:
+      - artifacts/model
+
+
+
+    
+
 
     
 

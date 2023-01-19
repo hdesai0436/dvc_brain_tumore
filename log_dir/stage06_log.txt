@@ -1,0 +1,74 @@
+2023-01-18/10:57:47		>>>>>>>> stage 06 stated
+2023-01-18/10:57:47		yaml file: config/config.yaml loaded successfully
+2023-01-18/10:57:47		yaml file: params.yaml loaded successfully
+2023-01-18/10:57:47		directory is created at artifacts\model
+2023-01-18/10:57:47		stage 06 error occur load_full_model() missing 1 required positional argument: 'log_file'
+2023-01-18/10:58:31		>>>>>>>> stage 06 stated
+2023-01-18/10:58:31		yaml file: config/config.yaml loaded successfully
+2023-01-18/10:58:31		yaml file: params.yaml loaded successfully
+2023-01-18/10:58:31		directory is created at artifacts\model
+2023-01-18/10:58:37		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/10:58:37		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/10:58:37		>>>>>>>> stage 06 end
+2023-01-18/11:02:09		>>>>>>>> stage 06 stated
+2023-01-18/11:02:09		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:02:09		yaml file: params.yaml loaded successfully
+2023-01-18/11:02:09		directory is created at artifacts\model
+2023-01-18/11:02:10		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:02:10		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:02:11		>>>>>>>> stage 06 end
+2023-01-18/11:15:22		>>>>>>>> stage 06 stated
+2023-01-18/11:15:22		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:15:22		yaml file: params.yaml loaded successfully
+2023-01-18/11:15:22		directory is created at artifacts\model
+2023-01-18/11:15:25		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:15:25		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:15:26		trainimg started
+2023-01-18/11:15:26		stage 06 error occur name 'scipy' is not defined
+2023-01-18/11:16:07		>>>>>>>> stage 06 stated
+2023-01-18/11:16:07		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:16:07		yaml file: params.yaml loaded successfully
+2023-01-18/11:16:07		directory is created at artifacts\model
+2023-01-18/11:16:09		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:16:09		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:16:10		trainimg started
+2023-01-18/11:16:10		stage 06 error occur name 'scipy' is not defined
+2023-01-18/11:20:54		>>>>>>>> stage 06 stated
+2023-01-18/11:20:54		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:20:54		yaml file: params.yaml loaded successfully
+2023-01-18/11:20:54		directory is created at artifacts\model
+2023-01-18/11:20:55		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:20:55		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:20:56		trainimg started
+2023-01-18/11:20:56		stage 06 error occur could not broadcast input array from shape (224,224,3) into shape (224,224,3,3)
+2023-01-18/11:24:30		>>>>>>>> stage 06 stated
+2023-01-18/11:24:30		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:24:30		yaml file: params.yaml loaded successfully
+2023-01-18/11:24:30		directory is created at artifacts\model
+2023-01-18/11:24:32		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:24:32		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:24:32		trainimg started
+2023-01-18/11:24:33		stage 06 error occur could not broadcast input array from shape (224,224,3) into shape (224,224,3,3)
+2023-01-18/11:31:06		>>>>>>>> stage 06 stated
+2023-01-18/11:31:06		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:31:06		yaml file: params.yaml loaded successfully
+2023-01-18/11:31:06		directory is created at artifacts\model
+2023-01-18/11:31:08		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:31:08		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:31:09		trainimg started
+2023-01-18/11:31:09		stage 06 error occur could not broadcast input array from shape (224,224,3) into shape (224,224,3,3)
+2023-01-18/11:31:58		>>>>>>>> stage 06 stated
+2023-01-18/11:31:58		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:31:58		yaml file: params.yaml loaded successfully
+2023-01-18/11:31:58		directory is created at artifacts\model
+2023-01-18/11:32:00		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:32:00		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:32:00		trainimg started
+2023-01-18/11:32:00		stage 06 error occur could not broadcast input array from shape (224,224,3) into shape (224,224,3,3)
+2023-01-18/11:33:09		>>>>>>>> stage 06 stated
+2023-01-18/11:33:10		yaml file: config/config.yaml loaded successfully
+2023-01-18/11:33:10		yaml file: params.yaml loaded successfully
+2023-01-18/11:33:10		directory is created at artifacts\model
+2023-01-18/11:33:11		untrained model is read from: artifacts\base_model\update_vgg16.h5
+2023-01-18/11:33:11		saved callbacks are loaded from artifacts\callbacks
+2023-01-18/11:33:11		trainimg started
