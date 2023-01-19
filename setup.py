@@ -13,7 +13,7 @@ setup(
     url="https://github.com/hdesai0436/dvc_brain_tumore.git",
     author_email="",
     packages=["src"],
-    python_requires=">=3.10",
+    python_requires=">=3.6",
     install_requires=[
         "dvc",
         "tensorflow",
