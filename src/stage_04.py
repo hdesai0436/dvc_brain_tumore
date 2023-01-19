@@ -29,7 +29,7 @@ def prepare_base_model(config_path,params_path):
 
     base_model_path = os.path.join(base_model_dir_path,base_model_name)
 
-    model = get_vgg_16_model(input_shape= params['IMAGE_SIZE'],model_path=base_model_path,log_file=log_file)
+    model = get_vgg_16_model(input_shape=(224,224,3),model_path=base_model_path,log_file=log_file)
 
     model = prepare_model(
         model,
