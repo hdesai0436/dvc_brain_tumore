@@ -50,13 +50,13 @@ def train_model(config_path,params_path):
 
     test_generator = tf.keras.preprocessing.image.ImageDataGenerator(preprocessing_function = tf.keras.applications.vgg16.preprocess_input ) 
 
-    traingen = train_generator.flow_from_directory(train_data_path,target_size=(224,224))
-    valgen = train_generator.flow_from_directory(val_data_path,target_size=(224,224))
+    traingen = train_generator.flow_from_directory(train_data_path,target_size=(224,224),subset='training',)
+    valgen = train_generator.flow_from_directory(val_data_path,target_size=(224,224),subset='validation')
     testgen = test_generator.flow_from_directory(test_data_path,target_size=(224,224))
 
     log_write.log(log_file,'trainimg started')
 
-    model.fit_generator(
+    model.fit(
     traingen,
     steps_per_epoch=50,
     epochs=30,
