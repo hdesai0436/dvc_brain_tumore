@@ -111,3 +111,5 @@
 2023-01-19/16:10:36		 successfully save the crop the image in test_crop/
 2023-01-19/16:10:54		 successfully save the crop the image in train_crop/
 2023-01-19/16:11:00		 successfully save the crop the image in val_crop/
+2023-01-31/20:59:39		yaml file: config/config.yaml loaded successfully
+2023-01-31/20:59:40		successfully load data from resized and save as np.array

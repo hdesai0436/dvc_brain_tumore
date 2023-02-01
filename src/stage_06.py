@@ -24,7 +24,6 @@ def train_model(config_path,params_path):
     train_data_path = config['artifacts']['train_crop_dir']
     val_data_path = config['artifacts']['val_crop_dir']
 
-
     train_model_dir_path = os.path.join(artifacts_dir,config['artifacts']['train_model_dir'])
 
     create_directory([train_model_dir_path],log_file=log_file)
@@ -58,7 +57,7 @@ def train_model(config_path,params_path):
 
     model.fit(
     traingen,
-    steps_per_epoch=50,
+    steps_per_epoch=5,
     epochs=30,
     validation_data=valgen,
     validation_steps=25,

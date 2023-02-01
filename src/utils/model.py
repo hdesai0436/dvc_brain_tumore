@@ -79,6 +79,7 @@ def get_unique_path_to_save_model(trained_model_dir, model_name="model"):
     timestamp = get_timestamp(model_name)
     unique_model_name = f"{timestamp}_.h5"
     unique_model_path = os.path.join(trained_model_dir, unique_model_name)
+    print(unique_model_path)
     return unique_model_path
         
         
