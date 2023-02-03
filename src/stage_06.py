@@ -10,6 +10,7 @@ import cv2
 import numpy as np
 import scipy
 import tensorflow as tf
+import matplotlib.pyplot as plt
 
 from application_logging.logger import App_Logger
 log_write = App_Logger()
@@ -49,18 +50,21 @@ def train_model(config_path,params_path):
 
     test_generator = tf.keras.preprocessing.image.ImageDataGenerator(preprocessing_function = tf.keras.applications.vgg16.preprocess_input ) 
 
-    traingen = train_generator.flow_from_directory(train_data_path,target_size=(224,224),subset='training',)
+    traingen = train_generator.flow_from_directory(train_data_path,target_size=(224,224),subset='training')
     valgen = train_generator.flow_from_directory(val_data_path,target_size=(224,224),subset='validation')
     testgen = test_generator.flow_from_directory(test_data_path,target_size=(224,224))
 
+    steps_per_epoch = train_generator.samples // train_generator.batch_size
+    validation_steps = valgen.samples // valgen.batch_size
+
     log_write.log(log_file,'trainimg started')
 
-    model.fit(
+    history = model.fit(
     traingen,
-    steps_per_epoch=5,
+    steps_per_epoch=steps_per_epoch,
     epochs=30,
     validation_data=valgen,
-    validation_steps=25,
+    validation_steps=validation_steps,
     callbacks=callback
     )
 
@@ -69,6 +73,34 @@ def train_model(config_path,params_path):
     model_file_path = get_unique_path_to_save_model(train_model_dir_path)
     model.save(model_file_path)
     log_write.log(log_file,"trainning complated")
+
+
+    acc = history.history['accuracy']
+    val_acc = history.history['val_accuracy']
+    loss = history.history['loss']
+    val_loss = history.history['val_loss']
+    epochs_range = range(1, len(history.epoch) + 1)
+
+    plt.figure(figsize=(15,5))
+
+    plt.subplot(1, 2, 1)
+    plt.plot(epochs_range, acc, label='Train Set')
+    plt.plot(epochs_range, val_acc, label='Val Set')
+    plt.legend(loc="best")
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy')
+    plt.title('Model Accuracy')
+
+    plt.subplot(1, 2, 2)
+    plt.plot(epochs_range, loss, label='Train Set')
+    plt.plot(epochs_range, val_loss, label='Val Set')
+    plt.legend(loc="best")
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.title('Model Loss')
+
+    plt.tight_layout()
+    plt.show()
 
 
 
